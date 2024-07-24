@@ -16,14 +16,14 @@
     <dialog>
       <form action="post">
         <p>Add New Book</p>
-        <input type="text" placeholder="Author" id="author">
-        <input type="text" placeholder="Title" id="title">
-        <input type="number" placeholder="Pages" id="pages">
+        <input type="text" placeholder="Author" id="author" required>
+        <input type="text" placeholder="Title" id="title" required>
+        <input type="number" placeholder="Pages" id="pages" required>
         <div id="read">
             Have You Read It?
-            <input type="checkbox" name="" id="check">
+            <input type="checkbox" name="" id="check" required>
         </div>
-        <button id="submit" type="submit">Submit</button>
+        <button id="submit" type="submit">Submit</button required>
       </form>
     </dialog>
     <div class="container">

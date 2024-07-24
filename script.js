@@ -78,9 +78,9 @@ const inputAuthor = document.querySelector("#author");
 const inputTitle = document.querySelector("#title");
 const inputPages = document.querySelector("#pages");
 const inputChecked = document.querySelector("#check");
-const submitBtn = document.querySelector("#submit");
+const form = document.querySelector("form");
 
-submitBtn.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     dialog.close();
 
@@ -93,4 +93,9 @@ submitBtn.addEventListener("click", (e) => {
 
     addBook(newBook);
     displayBooks();
+
+    inputAuthor.value = '';
+    inputTitle.value = '';
+    inputPages.value = '';
+    inputChecked.checked = false;
 });
